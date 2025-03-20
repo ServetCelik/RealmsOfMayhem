@@ -1,0 +1,6 @@
+@RealmsOfMayhem.API_HostAddress = http://localhost:5207
+
+GET {{RealmsOfMayhem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
