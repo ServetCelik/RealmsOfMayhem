@@ -5,6 +5,12 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmsOfMayhem.API", "RealmsOfMayhem.API\RealmsOfMayhem.API.csproj", "{1C3D16A1-A172-4881-831C-E3D5F56F70D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmsOfMayhem.Core", "RealmsOfMayhem.Core\RealmsOfMayhem.Core.csproj", "{AB30A4D5-6521-4B3B-881C-C035D8CC550D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmsOfMayhem.Infrastructure", "RealmsOfMayhem.Infrastructure\RealmsOfMayhem.Infrastructure.csproj", "{05D47780-510C-476D-8103-65DE02DC2116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmsOfMayhem.Tests", "RealmsOfMayhem.Tests\RealmsOfMayhem.Tests.csproj", "{85427FF0-4EF8-4117-88BB-B78285C2DF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{1C3D16A1-A172-4881-831C-E3D5F56F70D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C3D16A1-A172-4881-831C-E3D5F56F70D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C3D16A1-A172-4881-831C-E3D5F56F70D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB30A4D5-6521-4B3B-881C-C035D8CC550D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB30A4D5-6521-4B3B-881C-C035D8CC550D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB30A4D5-6521-4B3B-881C-C035D8CC550D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB30A4D5-6521-4B3B-881C-C035D8CC550D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D47780-510C-476D-8103-65DE02DC2116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D47780-510C-476D-8103-65DE02DC2116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D47780-510C-476D-8103-65DE02DC2116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D47780-510C-476D-8103-65DE02DC2116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85427FF0-4EF8-4117-88BB-B78285C2DF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85427FF0-4EF8-4117-88BB-B78285C2DF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85427FF0-4EF8-4117-88BB-B78285C2DF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85427FF0-4EF8-4117-88BB-B78285C2DF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
