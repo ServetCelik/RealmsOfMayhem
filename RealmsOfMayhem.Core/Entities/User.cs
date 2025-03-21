@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RealmsOfMayhem.Core.Entities.Buildings;
 
 namespace RealmsOfMayhem.Core.Entities
 {
     public class User
     {
-        public int Id { get; private set; }  
+        public int Id { get; private set; }
         public int AccountId { get; private set; }
         public Account Account { get; private set; } = null!;
 
@@ -18,8 +14,7 @@ namespace RealmsOfMayhem.Core.Entities
         public int Wheat { get; private set; }
         public int LandSize { get; private set; }
         public int Population { get; private set; }
-
-
+        public List<UserBuilding> Buildings { get; private set; } = new();
         public int LocationX { get; private set; }
         public int LocationY { get; private set; }
 
@@ -61,6 +56,28 @@ namespace RealmsOfMayhem.Core.Entities
         {
             if (amount < 0 || Wheat < amount) throw new ArgumentException("Not enough wheat.");
             Wheat -= amount;
+        }
+
+        public void Build(Building building, int count = 1)
+        {
+            var existing = Buildings.FirstOrDefault(b => b.Building.GetType() == building.GetType());
+
+            if (existing != null)
+            {
+                existing.Add(count);
+            }
+            else
+            {
+                Buildings.Add(new UserBuilding(building, count));
+            }
+
+            Gold -= building.Price * count;
+        }
+
+        public int GetBuildingCount<T>() where T : Building
+        {
+            return Buildings
+                .FirstOrDefault(b => b.Building is T)?.Count ?? 0;
         }
     }
 }
