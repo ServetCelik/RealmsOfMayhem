@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RealmsOfMayhem.Core.Entities.Units
+﻿namespace RealmsOfMayhem.Core.Entities.Units
 {
     public class ArcherUnit : Unit
     {
@@ -30,11 +24,11 @@ namespace RealmsOfMayhem.Core.Entities.Units
 
     public class BasicArcher : ArcherUnit
     {
-        public BasicArcher(UnitPosition position) : base(80, 5, 15,position) { }
+        public BasicArcher(UnitPosition position) : base(80, 5, 15, position) { }
     }
 
     public class Longbow : ArcherUnit
     {
-        public Longbow(UnitPosition position) : base( 90, 7, 20,position) { }
+        public Longbow(UnitPosition position) : base(90, 7, 20, position) { }
     }
 }

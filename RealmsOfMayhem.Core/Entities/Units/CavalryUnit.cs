@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RealmsOfMayhem.Core.Entities.Units
+﻿namespace RealmsOfMayhem.Core.Entities.Units
 {
     public class CavalryUnit : Unit
     {
@@ -15,7 +9,7 @@ namespace RealmsOfMayhem.Core.Entities.Units
 
         public override int GetModifiedAttack(Unit defender)
         {
-            if (defender.Type == UnitType.Infantry )
+            if (defender.Type == UnitType.Infantry)
             {
                 return (int)(Attack * 1.5);
             }
@@ -31,6 +25,6 @@ namespace RealmsOfMayhem.Core.Entities.Units
 
     public class TemplarKnight : CavalryUnit
     {
-        public TemplarKnight(UnitPosition position) : base( 200, 30, position) { }
+        public TemplarKnight(UnitPosition position) : base(200, 30, position) { }
     }
 }

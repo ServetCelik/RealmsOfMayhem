@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RealmsOfMayhem.Core.Entities.Units
+﻿namespace RealmsOfMayhem.Core.Entities.Units
 {
     public class AxeUnit : Unit
     {
@@ -17,7 +11,7 @@ namespace RealmsOfMayhem.Core.Entities.Units
         {
             if (defender.Type == UnitType.Cavalry)
             {
-                return (int)(Attack * 0.6); 
+                return (int)(Attack * 0.6);
             }
 
             return base.GetModifiedAttack(defender);
